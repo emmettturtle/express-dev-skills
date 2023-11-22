@@ -12,5 +12,14 @@
    | 
   <a href="/skills">All Skills</a>
   <h1><%= title %></h1>
+  <ul>
+    <% skills.forEach(function(s) { %>
+      <li>
+        <a href="/skills/<%= s.id %>"><%= s.skill %></a>
+          - 
+        <%= s.have ? 'can do' : 'cannot do' %>
+      </li>
+    <% }); %>
+  </ul>
 </body>
 </html>
