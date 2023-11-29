@@ -11,7 +11,9 @@
   <a href="/">Home</a>
    | 
   <a href="/skills">All Skills</a>
+  
   <h1><%= title %></h1>
+  <a href="/skills/new">Add New Skill</a>
   <ul>
     <% skills.forEach(function(s) { %>
       <li>
@@ -20,6 +22,8 @@
         <%= s.have ? 'can do' : 'cannot do' %>
       </li>
     <% }); %>
+
+
   </ul>
 </body>
 </html>
